@@ -1,0 +1,72 @@
+body {
+    font-family: Helvetica;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 128px;
+    font-weight: 100;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 48px;
+    font-weight: 50;
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: 50;
+}
+
+.timerbox {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonbox {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-around; /* Distributes the buttons evenly */
+    width: 100%; /* Ensures the buttons stretch across the container */
+    max-width: 600px; /* Optional: set a max-width for the button container */
+    margin-top: 20px;
+}
+
+.myButton {
+    background-color:transparent;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    cursor:pointer;
+    color:#616999;
+    font-family:Helvetica;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    transition-duration: 0.4s;
+    flex-grow: 1; /* Makes each button take up equal space */
+    text-align: center;
+    margin: 0 10px; /* Adds some spacing between buttons */
+    max-width: 180px; /* Optional: limits the width of each button */
+}
+
+.myButton:hover {
+    opacity: 0.3;
+    transition-duration: 0.4s;
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
