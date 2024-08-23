@@ -1,6 +1,6 @@
 body {
+    background-color: #090418;
     font-family: Helvetica;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,26 +8,29 @@ body {
 }
 
 h1 {
-    color: whitesmoke;
-    font-size: 128px;
+    color: #eae4fb;
+    font-size: 100px;
     font-weight: 100;
 }
 
 h2 {
-    color: whitesmoke;
-    font-size: 48px;
-    font-weight: 50;
-}
-
-h3 {
-    color: whitesmoke;
-    font-size: 32px;
-    font-weight: 50;
+    color: #eae4fb;
+    font-size: 30px;
+    font-weight: 10;
 }
 
 .timerbox {
-    background: none;
-    border: none;
+    background-color: transparent;
+    width: 67%;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clockbox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,38 +38,30 @@ h3 {
 }
 
 .buttonbox {
-    background: none;
-    border: none;
+    background-color: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5%;
     display: flex;
-    justify-content: space-around; /* Distributes the buttons evenly */
-    width: 100%; /* Ensures the buttons stretch across the container */
-    max-width: 600px; /* Optional: set a max-width for the button container */
-    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.myButton {
-    background-color:transparent;
-    border-radius:28px;
-    border:1px solid #ffffff;
-    cursor:pointer;
-    color:#616999;
-    font-family:Helvetica;
-    font-size:17px;
-    padding:16px 31px;
-    text-decoration:none;
+button {
+    color: #eae4fb;
+    background-color: transparent;
+    padding: 0;
+    border: 0px;
+    height: 50px;
+    width: 25%;
+    border-radius: 10px;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: 10;
     transition-duration: 0.4s;
-    flex-grow: 1; /* Makes each button take up equal space */
-    text-align: center;
-    margin: 0 10px; /* Adds some spacing between buttons */
-    max-width: 180px; /* Optional: limits the width of each button */
+    cursor: pointer; 
 }
 
-.myButton:hover {
-    opacity: 0.3;
-    transition-duration: 0.4s;
-}
-
-.myButton:active {
-    position:relative;
-    top:1px;
+button:hover {
+    opacity: .5;
 }
